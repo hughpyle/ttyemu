@@ -109,7 +109,7 @@ class TkinterFrontend:
         font = tkinter.font.Font(**font)
         self.font = font
         self.font_width = font.measure('X')
-        self.font_height = font['size']*4/3
+        self.font_height = self.font_width * 10 / 6
         self.canvas = tkinter.Canvas(
             self.root,
             bg=bg,
